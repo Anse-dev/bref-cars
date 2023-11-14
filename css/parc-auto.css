@@ -1,0 +1,101 @@
+/* start form section */
+.form_section {
+  background-color: #E4E4E4;
+}
+
+.container {
+  padding: 0 200px;
+}
+
+.form_content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.form_content h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.champ {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.champ label {
+  color: #696868;
+  font-weight: 500;
+  font-size: 14px;
+}
+.champ select,
+.champ #conducteur-age {
+  padding: 11px;
+}
+.champ input {
+  padding: 7px;
+}
+.champ input,
+.champ select {
+  border: 1.5px solid #BCBCBC;
+  border-radius: 5px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.747);
+  font-weight: 500;
+  background-color: rgba(250, 250, 250, 0.7960784314);
+}
+.champ .date_items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.voiture_info {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 40px;
+}
+
+.reservation_localisation {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 40Px;
+}
+
+.conducteur_info {
+  width: 45%;
+  display: grid;
+  grid-template-columns: 30% 50%;
+  gap: 50px;
+  align-items: center;
+}
+.conducteur_info .form_submit #form-btn {
+  background-color: #000000;
+  color: white;
+  padding: 14px;
+  width: 100%;
+  border: none;
+  border-radius: 0.3rem;
+  font-weight: bolder;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* end form style */
+/* start story section */
+.car-story-content {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 20px;
+}
+
+.single_car {
+  text-align: center;
+}
+.single_car h2,
+.single_car h3,
+.single_car h5 {
+  padding: 0;
+  margin: 0;
+}/*# sourceMappingURL=parc-auto.css.map */
