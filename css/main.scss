@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 *,
-*::before,
-*::after {
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -26,6 +26,7 @@ li {
   padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
+  position: relative;
 }
 @media (min-width: 640px) {
   .container {
@@ -108,11 +109,10 @@ a {
         h3 {
           margin: 0;
           font-size: 0.7rem;
-          @media (min-width: 728px) {
+          @media (min-width: 1024px) {
             font-size: 0.8rem;
           }
           span {
-            font-size: 0.8rem;
           }
         }
       }
@@ -122,7 +122,10 @@ a {
       .btn-reservation {
         background-color: $primary-color;
         border-radius: 0.4rem;
-        font-size: 1rem;
+        font-size: 0.6rem;
+        @media (min-width: 1024px) {
+          font-size: 1rem;
+        }
         text-transform: uppercase;
         color: #fff;
         height: 40px;
@@ -134,38 +137,152 @@ a {
     }
   }
   .navigation {
-    position: absolute;
-    left: 40px;
-    right: 40px;
-    bottom: -28px;
-    background-color: $primary-color;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    border: 2px solid #fff;
-    padding: 0 12px;
-    .menu-nav {
-      display: flex;
-      gap: 20px;
+    position: relative;
+    .content {
+      position: absolute;
+      bottom: -25px;
+      @media (min-width: 768px) {
+        bottom: -45px;
+      }
 
-      .menu-link {
-        color: #fff;
-        &:hover {
-          transition: all 0.5s;
-          color: rgb(255, 7, 7);
+      z-index: 999;
+      right: 20px;
+      left: 20px;
+      background-color: $primary-color;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      border: 2px solid #fff;
+      padding: 0 12px;
+      height: 60px;
+
+      .menu-nav {
+        display: none;
+        font-size: 0.7rem;
+        &.active {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          background-color: $primary-color;
+          left: 0;
+          right: 0;
+          top: 50px;
+          padding: 12px;
+          gap: 20px;
+          .menu-item {
+            flex: 1;
+          }
+        }
+        @media (min-width: 768px) {
+          display: flex;
+          gap: 20px;
+        }
+        @media (min-width: 1024px) {
+          font-size: 1rem;
+        }
+        .menu-item {
+          color: #fff;
+          &:hover {
+            transition: all 0.5s;
+            color: rgb(255, 7, 7);
+          }
         }
       }
-    }
-    .connexion {
-      color: #fff;
+      .menu-bar {
+        cursor: pointer;
+        padding: 12px;
+        @media (min-width: 768px) {
+          display: none;
+        }
+        span {
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: -6px;
+            background-color: #fff;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            bottom: -6px;
+            background-color: #fff;
+          }
+          display: block;
+          height: 2px;
+          width: 30px;
+          background-color: #fff;
+        }
+      }
+      .connexion {
+        color: #fff;
+        display: flex;
+        gap: 10px;
+        font-size: 0.7rem;
+
+        @media (min-width: 1024px) {
+          font-size: 1rem;
+        }
+      }
     }
   }
 }
 
 .banner {
+  position: relative;
   height: 550px;
   background-image: url("../images/pexels-s-von-hoerst-2676096.jpg");
   background-size: cover;
   background-position: center;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #02000068;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 550px;
+    color: #fff;
+    h1 {
+      text-align: center;
+      font-size: 1.9rem;
+      font-weight: 600;
+
+      line-height: 1.1;
+      margin-bottom: 0;
+      @media (min-width: 1024px) {
+        font-size: 2.5rem;
+      }
+    }
+    h3 {
+      font-weight: 400;
+    }
+    .btn {
+      background-color: orange;
+      border-radius: 0.3rem;
+      font-size: 0.7rem;
+      @media (min-width: 1024px) {
+        font-size: 1rem;
+      }
+      text-transform: uppercase;
+      color: #fff;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      margin-left: 20px;
+      justify-content: center;
+    }
+  }
 }
 /* Footer style */
