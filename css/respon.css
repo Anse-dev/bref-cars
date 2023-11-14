@@ -1,0 +1,71 @@
+@media (min-width: 640px) {
+    .container {
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+    .blog-nos-services {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .photo {
+        max-width: 600px;
+        max-height: 400px;
+    }
+    .service-blog-inner {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 50px 0px 0px 0px;
+    }
+    .service_inner {
+        border: 1px solid rgba(128, 128, 128, 0.438);
+        padding: 30px 30px;
+        align-items: center;
+    }
+    .blog-silder {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+    .avantage-blog-inner {
+        display: flex;
+        flex-direction: row;
+        gap: 5px
+    }
+    .photo {
+        max-width: 550px;
+        max-height: 400px;
+    }
+    .blog-silder {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+    }
+}
+
+
+/* Header style */
+
+
+/* Footer style */

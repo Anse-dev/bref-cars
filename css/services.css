@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Raleway", sans-serif; */
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+
+/* Style standard */
+
+.container {
+    width: 100%;
+    padding: 10px 20px;
+}
+
+
+/*  End Style standard */
+
+
+/*  Star Style Avantage */
+
+.avantage-blog {
+    display: flex;
+    flex-direction: column;
+}
+
+.avantage-blog-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+}
+
+.blog-texte {
+    text-align: justify;
+}
+
+.photo {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.photo-service {
+    max-width: 100%;
+    width: 100%;
+    max-height: 200px;
+}
+
+.photo-slider {
+    max-width: 100%;
+    max-height: 200px;
+}
+
+.service-blog-inner {
+    display: grid;
+    gap: 20px;
+    padding: 50px 0px 0px 0px;
+}
+
+.service_inner {
+    border: 1px solid rgba(128, 128, 128, 0.438);
+    padding: 30px 30px;
+    align-items: center;
+}
+
+.service_inner:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: 1.2s;
+}
+
+.service-texte {
+    text-align: center;
+    font-size: 12px;
+}
+
+.service-texte p:hover {
+    color: gray;
+}
+
+.derniers-art-texte {
+    text-align: center;
+}
+
+.blog-silder {
+    display: grid;
+}
