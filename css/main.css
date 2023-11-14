@@ -11,12 +11,24 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.4;
+  margin: 0;
+}
+
+ul,
+li {
+  padding: 0;
+  list-style: none;
 }
 
 /* Style standard */
 .container {
   width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
 }
+
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
@@ -42,7 +54,128 @@ body {
     max-width: 1536px;
   }
 }
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn {
+  padding: 20px 18px;
+}
 
 /* Header style */
+.header {
+  position: relative;
+}
+.header .header-content .top-header {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  padding: 20px 0;
+  align-items: center;
+  gap: 20px;
+}
+@media (min-width: 1141px) {
+  .header .header-content .top-header {
+    display: flex;
+  }
+}
+.header .header-content .top-header .logo {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 1141px) {
+  .header .header-content .top-header .logo {
+    margin-right: 20px;
+    flex: 0 1;
+  }
+}
+.header .header-content .top-header .logo a {
+  width: 250px;
+}
+.header .header-content .top-header-info {
+  flex: 1;
+  display: none;
+  font-size: 0.8rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+@media (min-width: 728px) {
+  .header .header-content .top-header-info {
+    display: grid;
+    justify-content: center;
+  }
+}
+.header .header-content .top-header .top-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header .header-content .top-header .top-item i {
+  font-size: 2rem;
+}
+.header .header-content .top-header .top-item h3 {
+  margin: 0;
+  font-size: 0.7rem;
+}
+@media (min-width: 728px) {
+  .header .header-content .top-header .top-item h3 {
+    font-size: 0.8rem;
+  }
+}
+.header .header-content .top-header .top-item h3 span {
+  font-size: 0.8rem;
+}
+.header .header-content .top-header span {
+  font-weight: 300;
+}
+.header .header-content .top-header .btn-reservation {
+  background-color: #000;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #fff;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  justify-content: center;
+}
+.header .navigation {
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  bottom: -28px;
+  background-color: #000;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  border: 2px solid #fff;
+  padding: 0 12px;
+}
+.header .navigation .menu-nav {
+  display: flex;
+  gap: 20px;
+}
+.header .navigation .menu-nav .menu-link {
+  color: #fff;
+}
+.header .navigation .menu-nav .menu-link:hover {
+  transition: all 0.5s;
+  color: rgb(255, 7, 7);
+}
+.header .navigation .connexion {
+  color: #fff;
+}
 
-/* Footer style */
+.banner {
+  height: 550px;
+  background-image: url("../images/pexels-s-von-hoerst-2676096.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Footer style *//*# sourceMappingURL=main.css.map */
