@@ -152,7 +152,7 @@ a {
 }
 .header .navigation .content {
   position: absolute;
-  bottom: -25px;
+  bottom: -45px;
   z-index: 999;
   right: 20px;
   left: 20px;
@@ -306,4 +306,929 @@ a {
   }
 }
 
-/* Footer style *//*# sourceMappingURL=main.css.map */
+/* bout us css */
+.aboutUs_inner {
+  padding: 50px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.aboutUs_inner .left img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.aboutUs_inner .right {
+  text-align: center;
+}
+
+.aboutUs_inner .right p {
+  text-align: justify;
+  line-height: 1.5;
+  color: rgb(121, 120, 120);
+}
+
+/* bout us end css */
+/* usServices css */
+.usServices_inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 15px 50px 15px;
+}
+
+.usServices_inner .usServices_card {
+  width: 100%;
+  padding: 0 10px 0 0;
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  gap: 8px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.usServices_inner .usServices_card .usServices_img {
+  height: 80px;
+}
+
+.usServices_inner .usServices_card .usServices_img img {
+  border-radius: 10px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.3s;
+}
+
+.usServices_inner .usServices_card .usServices_text a {
+  font-size: 14px;
+  font-weight: bolder;
+  transition: 0.3s;
+}
+
+.usServices_inner .usServices_card .usServices_text a:hover {
+  color: orange;
+}
+
+/* usServices end css */
+/* lieu location css */
+.WhereLocation {
+  position: relative;
+  padding: 0 15px 50px 15px;
+}
+
+.WhereLocation hr {
+  display: none;
+}
+
+.WhereLocation .container .innerWhereLocation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.WhereLocation .container .innerWhereLocation .whereImg img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.WhereLocation .container .innerWhereLocation .whereHead {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  background-color: rgba(230, 230, 230, 0.945);
+  padding: 0 10px;
+  margin-bottom: 5px;
+  height: 50px;
+}
+
+.WhereLocation .container .innerWhereLocation .whereHead p {
+  text-align: center;
+}
+
+.WhereLocation .container .innerWhereLocation .wherefoot {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  background-color: rgba(230, 230, 230, 0.945);
+  padding: 0 10px;
+  margin-bottom: 5px;
+  height: 50px;
+}
+
+.WhereLocation .container .innerWhereLocation .wherefoot p {
+  text-align: center;
+}
+
+.WhereLocation .container .innerWhereLocation .wherefoot p span {
+  font-weight: bolder;
+}
+
+/* lieu location  end css */
+/* commitAgence css*/
+.commitAgence {
+  padding: 0 15px 20px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.commitAgence .container .commitAgence_inner .commitAgence_inner_head {
+  text-align: justify;
+}
+
+.commitAgence .container .commitAgence_inner .commitAgence_inner_img img {
+  width: 100%;
+  height: auto;
+}
+
+/* commitAgence css end*/
+/* notre experience css*/
+.experinceInner {
+  padding: 20px 15px 50px 15px;
+  display: grid;
+  grid-template-rows: 10% 1fr;
+}
+
+.experinceInner .experince_title {
+  text-align: center;
+}
+
+.experinceInner .experince_icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.experinceInner .experince_icons .part_icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.experinceInner .experince_icons .part_icons h4,
+p {
+  text-align: center;
+}
+
+.experinceInner .experince_icons .part_icons p {
+  margin-top: -10px;
+}
+
+.experinceInner .experince_icons .part_icons .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 6px;
+  width: 40px;
+  height: 40px;
+  transition: 0.5s;
+}
+
+.experinceInner .experince_icons .part_icons:hover .icon {
+  background-color: orange;
+  color: #fff;
+  border: 0rem;
+}
+
+/* notre experience css end*/
+/* notre MEILLEURS VENTES css */
+.best_still {
+  width: 100%;
+  padding: 20px 15px 50px 15px;
+  background-color: black;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.best_still_inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.best_still_inner .best_still_head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.best_still_inner .best_still_head p {
+  margin-top: -10px;
+}
+
+.best_still_inner .best_still_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.best_still_inner .best_still_img .best_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.best_still_inner .best_still_img .best_img .price_still {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -20px;
+  width: 100%;
+}
+
+.best_still_inner .best_still_img .best_img .price_still p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(204, 204, 204, 0.74);
+  padding: 5px 10px;
+}
+
+.best_still_inner .best_still_img .best_img .price_still p span {
+  color: orange;
+}
+
+.best_still_inner button {
+  border: 0;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.best_still_inner button a {
+  color: black;
+  -webkit-text-decoration: 0;
+          text-decoration: 0;
+  font-weight: bolder;
+}
+
+.best_still_inner button:hover {
+  background-color: orange;
+}
+
+/* notre MEILLEURS VENTES css end*/
+/* formulaire de recherche css */
+.form_search {
+  margin: 30px 0;
+  position: relative;
+  padding: 20px 15px 0px 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.form_search .form_search_inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form_search .form_search_inner .form_search_head {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form_search .form_search_inner .form_search_head p {
+  font-size: 10px;
+  margin-top: -10px;
+}
+
+.form_search .form_search_inner form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: gray;
+}
+
+.form_search .form_search_inner form .depart_part,
+.route_part {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.form_search .form_search_inner form .depart_part select {
+  padding: 8px 20px;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+.form_search .form_search_inner form .depart_part .time_depart {
+  display: flex;
+  gap: 20px;
+}
+
+.form_search .form_search_inner form .depart_part .time_depart input {
+  padding: 8px 30px;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+.form_search .form_search_inner form .route_part .time_depart {
+  display: flex;
+  gap: 20px;
+}
+
+.form_search .form_search_inner form .route_part .time_depart input {
+  padding: 8px 30px;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+.form_search .form_search_inner form .route_part select {
+  padding: 8px 20px;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+.form_search .form_search_inner form .route_part .userOld {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.form_search .form_search_inner form .route_part .userOld input {
+  padding: 8px 10px;
+  background-color: #fff;
+  border-radius: 6px;
+  height: 30px;
+  width: 100px;
+}
+
+.form_search .form_search_inner .submitButton input {
+  padding: 10px 60px;
+  background-color: black;
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  position: absolute;
+  left: 18%;
+  margin-top: -18px;
+}
+
+.form_search .form_search_inner .submitButton input:hover {
+  background-color: orange;
+}
+
+.form_search .form_search_inner form img {
+  display: none;
+}
+
+/* formulaire de recherche css end*/
+/* Style standard */
+@media (min-width: 640px) {
+  /* bout us css */
+  .aboutUs_inner .left img {
+    width: 600px;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+  }
+  /* bout us end css */
+  /* usServices css */
+  .usServices_inner {
+    justify-content: start;
+  }
+  .usServices_inner .usServices_card {
+    width: 49%;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    gap: 10px;
+    align-items: center;
+  }
+  .usServices_inner .usServices_card .usServices_img {
+    height: 80px;
+  }
+  /* usServices end css */
+  /* lieu location css */
+  .WhereLocation hr {
+    display: block;
+    border: 0;
+    height: 1px;
+    background-color: rgba(230, 230, 230, 0.945);
+    width: 100%;
+  }
+  .WhereLocation {
+    position: relative;
+    padding: 30px 15px;
+  }
+  .WhereLocation .container .innerWhereLocation .whereImg img {
+    margin: 30px 0;
+  }
+  .WhereLocation .container .innerWhereLocation .whereHead {
+    position: absolute;
+    top: -18px;
+  }
+  .WhereLocation .container .innerWhereLocation .wherefoot {
+    position: absolute;
+    bottom: -18px;
+  }
+  /* lieu location  end css */
+  /* commitAgence css*/
+  .commitAgence .container .commitAgence_inner .commitAgence_inner_head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .commitAgence .container .commitAgence_inner .commitAgence_inner_head p {
+    width: 80%;
+    text-align: center;
+  }
+  /* commitAgence css end*/
+  /* notre MEILLEURS VENTES css */
+  .best_still_inner .best_still_img .best_img .price_still p {
+    width: 50%;
+  }
+  /* notre MEILLEURS VENTES css end */
+  /* formulaire de recherche css */
+  .form_search {
+    border: 0;
+  }
+  .form_search .form_search_inner form {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 20px;
+    align-items: start;
+    justify-content: start;
+  }
+  .form_search .form_search_inner .submitButton input {
+    position: absolute;
+    left: 0;
+    top: 240px;
+  }
+  .form_search .form_search_inner form img {
+    display: none;
+  }
+  /* formulaire de recherche css end*/
+}
+@media (min-width: 768px) {
+  /* bout us css */
+  .aboutUs_inner {
+    padding: 50px 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .aboutUs_inner .left {
+    height: 93%;
+  }
+  .aboutUs_inner .left img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+  }
+  .aboutUs_inner .right {
+    text-align: start;
+  }
+  .aboutUs_inner .right p {
+    text-align: justify;
+    line-height: 1.5;
+  }
+  /* bout us end css */
+  /* usServices css */
+  .usServices_inner {
+    justify-content: start;
+  }
+  .usServices_inner .usServices_card {
+    width: 49%;
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    align-items: center;
+  }
+  .usServices_inner .usServices_card .usServices_img img {
+    width: 100%;
+  }
+  /* usServices end css */
+  /* lieu location css */
+  .WhereLocation .container .innerWhereLocation .whereImg img {
+    width: 400px;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+  }
+  /* lieu location  end css */
+  /* notre experience css*/
+  .experinceInner .experince_icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .experinceInner .experince_icons .part_icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 200px;
+    font-size: 14px;
+  }
+  /* notre experience css end*/
+  /* formulaire de recherche css */
+  .form_search .form_search_inner form .depart_part .time_depart input {
+    padding: 8px 50px;
+  }
+  .form_search .form_search_inner form .route_part .time_depart input {
+    padding: 8px 50px;
+    background-color: #fff;
+    border-radius: 6px;
+  }
+  .form_search .form_search_inner form img {
+    display: none;
+  }
+  /* formulaire de recherche css end*/
+}
+@media (min-width: 1024px) {
+  /* bout us css */
+  .aboutUs_inner {
+    gap: 40px;
+  }
+  .aboutUs_inner .right p {
+    line-height: 1.7;
+  }
+  /* bout us end css */
+  /* usServices css */
+  .usServices_inner .usServices_card {
+    width: 32.5%;
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    gap: 15px;
+    align-items: center;
+  }
+  .usServices_inner .usServices_card .usServices_img img {
+    width: 100%;
+  }
+  /* usServices end css */
+  /* commitAgence css*/
+  .commitAgence .container .commitAgence_inner .commitAgence_inner_img img {
+    width: 100%;
+    height: auto;
+  }
+  /* commitAgence css end*/
+  /* notre MEILLEURS VENTES css */
+  .best_still_inner .best_still_img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  /* notre MEILLEURS VENTES css end*/
+  /* formulaire de recherche css */
+  #imgSearch {
+    display: block;
+  }
+  .form_search .form_search_inner form {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 30% 1fr;
+    color: gray;
+  }
+  .form_search .form_search_inner form img {
+    width: 100%;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+  }
+  .form_search .form_search_inner .submitButton input {
+    padding: 10px 60px;
+    background-color: black;
+    color: #fff;
+    border: 0;
+    border-radius: 6px;
+    position: absolute;
+    left: 0;
+    top: 150px;
+  }
+  /* formulaire de recherche css end*/
+}
+@media (min-width: 1280px) {
+  /* bout us css */
+  .aboutUs_inner .right p {
+    line-height: 1.9;
+  }
+  /* bout us end css */
+  /* usServices css */
+  .usServices_inner .usServices_card {
+    width: 32.5%;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    gap: 15px;
+    align-items: center;
+  }
+  .usServices_inner .usServices_card .usServices_img img {
+    width: 100%;
+  }
+  .usServices_inner .usServices_card .usServices_text p {
+    font-size: 1rem;
+  }
+  /* usServices end css */
+  /* notre MEILLEURS VENTES css */
+  .best_still_inner .best_still_img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+  }
+  .best_still_inner .best_still_img .best_img {
+    width: 100%;
+  }
+  /* notre MEILLEURS VENTES css end*/
+}
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+  /* bout us css */
+  .aboutUs_inner .right p {
+    line-height: 2;
+  }
+  .aboutUs_inner .left {
+    height: 90%;
+  }
+  /* bout us end css */
+  /* usServices css */
+  .usServices_inner .usServices_card {
+    align-items: center;
+  }
+  .usServices_inner .usServices_card .usServices_text p {
+    font-size: 1.1rem;
+  }
+}
+/*  Star Style Avantage */
+.avantage-blog {
+  display: flex;
+  flex-direction: column;
+}
+
+.avantage-blog-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.blog-texte {
+  text-align: justify;
+}
+
+.photo {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.photo-service {
+  max-width: 100%;
+  width: 100%;
+  max-height: 200px;
+}
+
+.photo-slider {
+  max-width: 100%;
+  max-height: 200px;
+}
+
+.blog-nos-services {
+  margin-top: 60px;
+}
+
+.service-blog-inner {
+  display: grid;
+  gap: 20px;
+  padding: 50px 0px 0px 0px;
+}
+
+.service_inner {
+  border: 1px solid rgba(128, 128, 128, 0.438);
+  padding: 30px 30px;
+  align-items: center;
+}
+
+.service_inner:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  transition: 1.2s;
+}
+
+.service-texte {
+  text-align: center;
+  font-size: 12px;
+}
+
+.service-texte p:hover {
+  color: gray;
+}
+
+.derniers-art-texte {
+  text-align: center;
+}
+
+.blog-silder {
+  display: grid;
+}
+
+.derniers-article {
+  display: grid;
+  padding: 150px 0px 0px 0px;
+}
+
+@media (min-width: 768px) {
+  .blog-nos-services {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .photo {
+    max-width: 600px;
+    max-height: 400px;
+  }
+  .service-blog-inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 50px 0px 0px 0px;
+  }
+  .service_inner {
+    border: 1px solid rgba(128, 128, 128, 0.438);
+    padding: 30px 30px;
+    align-items: center;
+  }
+  .blog-silder {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .avantage-blog-inner {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+  .photo {
+    max-width: 550px;
+    max-height: 400px;
+  }
+  .blog-silder {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+/* Page contact  */
+.mymaps {
+  width: 100%;
+  height: 300px;
+  background-color: rgba(0, 0, 255, 0.788);
+}
+
+.nous-contacter {
+  display: grid;
+  grid-template-columns: repeat(2, 40%);
+  gap: 2%;
+  margin-top: 40px;
+}
+
+.direct-contact {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.direct-contact h3 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.information {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+}
+
+#icon-contact {
+  color: #ffb100;
+}
+
+.icon-reseau {
+  display: flex;
+  gap: 15px;
+}
+
+.blog-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-form div h3 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.champ-group {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 20px;
+}
+
+.champ-group div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.champ-group input {
+  padding: 10px 20px;
+  border-radius: 0.4rem;
+  border: 1px solid rgba(167, 162, 162, 0.9529411765);
+}
+
+.champ-group textarea {
+  padding: 10px 20px;
+}
+
+.obligation {
+  color: red;
+  font-size: 20px;
+}
+
+.btn {
+  width: 100px;
+  height: 50px;
+  margin-top: 10px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  border: 1px solid;
+}
+
+@media (max-width: 885px) {
+  .nous-contacter {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  .blog-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .direct-contact {
+    display: none;
+  }
+  .champ-group {
+    display: flex;
+    flex-direction: column;
+  }
+  .champ-group div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .champ-group input {
+    width: 100%;
+    border-radius: 0.4rem;
+    border: 1px solid rgba(167, 162, 162, 0.9529411765);
+  }
+}/*# sourceMappingURL=main.css.map */
