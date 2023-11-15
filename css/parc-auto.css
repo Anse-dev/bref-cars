@@ -1,20 +1,47 @@
+.btn {
+  background-color: #000000;
+  color: white;
+  padding: 14px;
+  width: 100%;
+  border: none;
+  border-radius: 0.3rem;
+  font-weight: bolder;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+img {
+  max-width: 100% !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 0;
+  margin: 0;
+}
+
+.btn:hover {
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.662745098) !important;
+}
+
 /* start form section */
 .form_section {
   background-color: #E4E4E4;
 }
 
-.container {
-  padding: 0 200px;
+.container2 {
+  padding: 6% 10%;
 }
 
 .form_content {
   display: flex;
   flex-direction: column;
   gap: 30px;
-}
-.form_content h2 {
-  padding: 0;
-  margin: 0;
 }
 
 .champ {
@@ -23,18 +50,22 @@
   gap: 10px;
   margin-bottom: 20px;
 }
+
 .champ label {
   color: #696868;
   font-weight: 500;
   font-size: 14px;
 }
+
 .champ select,
 .champ #conducteur-age {
   padding: 11px;
 }
+
 .champ input {
   padding: 7px;
 }
+
 .champ input,
 .champ select {
   border: 1.5px solid #BCBCBC;
@@ -44,6 +75,7 @@
   font-weight: 500;
   background-color: rgba(250, 250, 250, 0.7960784314);
 }
+
 .champ .date_items {
   display: flex;
   flex-direction: row;
@@ -69,33 +101,273 @@
   gap: 50px;
   align-items: center;
 }
-.conducteur_info .form_submit #form-btn {
-  background-color: #000000;
-  color: white;
-  padding: 14px;
-  width: 100%;
-  border: none;
-  border-radius: 0.3rem;
-  font-weight: bolder;
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
 
 /* end form style */
 /* start story section */
-.car-story-content {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
+.car-story {
+  background-color: rgb(238, 237, 237);
+}
+
+.car-story-container {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
-.single_car {
-  text-align: center;
+.edit_date,
+.item_value,
+.reservation_date {
+  color: #444444;
+  font-size: 12px;
 }
-.single_car h2,
-.single_car h3,
-.single_car h5 {
-  padding: 0;
-  margin: 0;
-}/*# sourceMappingURL=parc-auto.css.map */
+
+/* tilte */
+.car_story_title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.car_story_title .title span {
+  color: orange;
+}
+
+.car_story_title span {
+  font-weight: bolder;
+}
+
+.car-story-content {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 30px;
+}
+
+.car-story-content .single_car {
+  text-align: center;
+  background-color: #E4E4E4;
+  padding: 10px 2%;
+  border: 0.1px solid rgba(211, 211, 211, 0.4941176471);
+}
+
+.car-story-content .single_car .car_info_content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.car-story-content .single_car .car_info_content .reservation_btn {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.car-story-content .single_car .car_info_content .price span {
+  color: orange;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.car-story-content .single_car .car_caract {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+
+.car-story-content .single_car .car_caract .caract_item {
+  border: 0.1px solid rgba(130, 130, 130, 0.1647058824);
+  padding: 5px 0;
+  background-color: rgba(255, 255, 255, 0.4941176471);
+}
+
+/* pagination */
+.pagination_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+}
+
+.pagination_content .pages_indice {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pagination_content .item {
+  padding: 8px 20px;
+  border: 1px solid;
+}
+
+.pagination_content .item:hover {
+  background-color: #000000;
+  color: #E4E4E4;
+  transition: 0.5s;
+}
+
+.pagination_content .item.active {
+  background-color: #000000;
+  color: #E4E4E4;
+  transition: 0.5s;
+}
+
+/* responsive disign */
+@media (max-width: 450px) {
+  .btn {
+    padding: 10px;
+  }
+
+  input,
+  select,
+  #conducteur-age {
+    width: 100%;
+    font-size: 13px;
+    padding: 6px;
+    border-radius: 0;
+  }
+
+  .date_items {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .conducteur_info {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 10px;
+  }
+
+  .btn {
+    width: 100% !important;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+  }
+
+  /* form section */
+  .form_section {
+    background-color: white;
+  }
+
+  .champ {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+
+  .champ .date_items {
+    gap: 10%;
+  }
+
+  .form_content {
+    gap: 10px;
+  }
+
+  .form_content input,
+  .form_content select,
+  .form_content #conducteur-age {
+    width: 100%;
+  }
+
+  .form_content .voiture_info {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .form_content .voiture_info .reservation_localisation {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form_content .voiture_info .reservation_localisation .depart_container,
+  .form_content .voiture_info .reservation_localisation .arriver_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* start story section */
+  .car-story {
+    background-color: white;
+  }
+
+  /* tilte */
+  .car_story_title {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    text-align: center;
+  }
+
+  .car_story_title h1 {
+    font-size: 20px;
+  }
+
+  .car_story_title .title span {
+    color: orange;
+  }
+
+  .car_story_title span {
+    font-weight: bolder;
+  }
+
+  .car-story-content {
+    display: grid;
+    grid-template-columns: repeat(1, auto) !important;
+    gap: 30px;
+  }
+
+  .car-story-content .single_car {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .car-story-content .single_car .car_info_content {
+    gap: 5px;
+  }
+
+  .car-story-content .single_car .car_caract {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .pagination_content {
+    gap: 15px;
+  }
+
+  .pagination_content .pages_indice {
+    gap: 10px;
+  }
+
+  .pagination_content .item {
+    padding: 2px 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  /* form */
+  .voiture_info {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .conducteur_info {
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 10px;
+    align-items: center;
+  }
+
+  /* stoey */
+  .car-story-content {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 30px;
+  }
+}
+
+/*# sourceMappingURL=parc-auto.css.map */
