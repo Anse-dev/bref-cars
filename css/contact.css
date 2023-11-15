@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    /*   font-family: "Raleway", sans-serif; */
+    font-size: 16px;
+}
+
+.container {
+    padding: 20px 30px 0px 0px;
+}
+
+.mymaps {
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 0, 255, 0.788);
+}
+
+.nous-contacter {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    gap: 2%;
+    margin-top: 40px;
+}
+
+.direct-contact {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2px;
+}
+
+.direct-contact h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.information {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+}
+
+#icon-contact {
+    color: #ffb100;
+}
+
+.icon-reseau {
+    display: flex;
+    gap: 15px;
+}
+
+.blog-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-form div h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.champ-group {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+}
+
+.champ-group div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.champ-group input {
+    padding: 10px 20px;
+    border-radius: .4rem;
+    border: 1px solid #a7a2a2f3;
+}
+
+.champ-group textarea {
+    padding: 10px 20px;
+}
+
+.obligation {
+    color: red;
+    font-size: 20px;
+}
+
+.btn {
+    width: 100px;
+    height: 50px;
+    margin-top: 10px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border-radius: .4rem;
+    border: 1px solid;
+}
+
+@media (max-width: 885px) {
+    .nous-contacter {
+        display: flex;
+        margin-top: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+    .blog-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .direct-contact {
+        display: none;
+    }
+    .champ-group {
+        display: flex;
+        flex-direction: column;
+    }
+    .champ-group div {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+    .champ-group input {
+        width: 100%;
+        border-radius: .4rem;
+        border: 1px solid #a7a2a2f3;
+    }
+    .champ-group textarea {}
+}
