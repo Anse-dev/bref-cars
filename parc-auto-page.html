@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/parc-auto.css" />
+    <title>pack-auto-page</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="top-header">
+            <div class="logo">
+              <a href="/"><img src="./images/logo.png" alt="" /></a>
+            </div>
+            <div class="top-header-info">
+              <div class="adress top-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="content">
+                  <h3>
+                    Adress: <br />
+                    <span>Bondoukou, Qartier Lycée</span>
+                  </h3>
+                </div>
+              </div>
+              <div class="telephon top-item">
+                <i class="fa-solid fa-headset"></i>
+                <div class="content">
+                  <h3>Tel: <span>+225 0555894335</span></h3>
+                  <h3>Tel: <span>+225 0555894335</span></h3>
+                </div>
+              </div>
+              <div class="email top-item">
+                <i class="fa-solid fa-envelope"></i>
+                <div class="content">
+                  <h3>
+                    E-mail: <br />
+                    <span>contact@jeloue.com</span>
+                  </h3>
+                </div>
+              </div>
+              <a href="#" class="btn btn-reservation">Réservation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navigation">
+        <div class="container">
+          <div class="content">
+            <ul class="menu-nav">
+              <li class="menu-item"><a href="" class="menu-link">Acceuil</a></li>
+              <li class="menu-item"><a href="" class="menu-link">A propos</a></li>
+              <li class="menu-item"><a href="./parc-auto-page.html" class="menu-link">Nos voitures</a></li>
+              <li class="menu-item"><a href="" class="menu-link">MiniBus</a></li>
+              <li class="menu-item"><a href="./nos services.html" class="menu-link">Nos services</a></li>
+              <li class="menu-item"><a href="" class="menu-link">Témoignages</a></li>
+              <li class="menu-item"><a href="/contact.html" class="menu-link">contact</a></li>
+            </ul>
+            <div class="menu-bar">
+              <span></span>
+            </div>
+            <div class="connexion">
+              <span>Mon Compte</span>
+              <i class="fa-solid fa-sort-down"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End Header -->
+    <main>
+      <!-- start form section -->
+      <section class="form_section">
+        <form action="parc-auto" method="post" class="container2">
+          <div class="form_content">
+            <h2 class="form_titlte">Ajuster le resultat de la recherche</h2>
+            <div class="voiture_info">
+              <div class="reservation_localisation">
+                <div class="depart_container">
+                  <div class="champ">
+                    <label for="ville_depart">Lieu de depart</label>
+                    <select name="ville_depart" id="ville_depart" required>
+                      <option>Cote d'Ivoire-ville</option>
+                      <option value="Abidjan">Abidjan-ville</option>
+                      <option value="Bondoukou">Bondoukou_ville</option>
+                      <option value="Abidjan">Abidjan-ville</option>
+                      <option value="Bondoukou">Bondoukou_ville</option>
+                      <option value="Abidjan">Abidjan-ville</option>
+                      <option value="Bondoukou">Bondoukou_ville</option>
+                    </select>
+                  </div>
+                  <div class="champ">
+                    <label for="depat-date">Date de depart</label>
+                    <div class="date_items">
+                      <input type="date" placeholder="14/11/23" name="depart-date" id="depat-date" class="date" required />
+                      <input type="time" name="heure-depart" id="heure-depart" class="heure" required />
+                    </div>
+                  </div>
+                </div>
+                <div class="arriver_container">
+                  <div class="champ">
+                    <label for="ville-retour">Lieu de retour</label>
+                    <select name="ville-retour" id="ville-retour" required>
+                      <option>Cote d'Ivoire-ville</option>
+                      <option value="Abidjan">Abidjan-ville</option>
+                      <option value="Bondoukou">Bondoukou_ville</option>
+                      <option value="Abidjan">Abidjan-ville</option>
+                      <option value="Bondoukou">Bondoukou_ville</option>
+                      <option value="Abidjan">Abidjan-ville</option>
+                      <option value="Bondoukou">Bondoukou_ville</option>
+                    </select>
+                  </div>
+                  <div class="champ">
+                    <label for="retour-date">Date de retour</label>
+                    <div class="date_items">
+                      <input type="date" placeholder="14/11/23" name="depart-date" id="retour-date" class="date" required />
+                      <input type="time" name="heure-retour" id="heure-retour" class="heure" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="marque_container">
+                <div class="champ">
+                  <label for="marque">Marque</label>
+                  <select name="marque" id="marque" required>
+                    <option value>Toutes les marques</option>
+                    <option value="BMW">BMW</option>
+                    <option value="BMW">PEUGEOT</option>
+                    <option value="BMW">BMW</option>
+                    <option value="BMW">BMW</option>
+                  </select>
+                </div>
+                <div class="champ">
+                  <label for="carburant">carburant</label>
+                  <select name="carburant" id="carburant" required>
+                    <option>Tous les types</option>
+                    <option value="gasoile">gasoile</option>
+                    <option value="gasoile">essence</option>
+                    <option value="gasoile">xxxxxxxx</option>
+                    <option value="gasoile">gasoile</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div id="conducteur_info" class="conducteur_info">
+              <div class="champ">
+                <label for="conducteur-age">Age du conducteur</label>
+                <input type="number" name="conducteur-age" id="conducteur-age" placeholder="Age" required />
+              </div>
+              <div class="form_submit">
+                <button class="btn" type="submit">Chercher</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+      <!-- end form section -->
+
+      <!-- start story section -->
+      <section class="car-story">
+        <!-- alls cars -->
+        <div class="car-story-container container2">
+          <div class="car_story_title">
+            <h1 class="title"><span>6</span> Voitures au total</h1>
+            <div class="pages">page <span>1</span> sur <span>6</span></div>
+          </div>
+          <div class="car-story-content">
+            <!-- car single -->
+            <div class="single_car">
+              <div class="car_box">
+                <div class="car_title_container">
+                  <h2 class="car_title">Disponible</h2>
+                </div>
+                <div class="car_image_container">
+                  <img class="car" src="./images/parc-auto/thumb-Kia-Picanto.png" alt="" srcset="" />
+                </div>
+                <div class="car_info_container">
+                  <div class="car_info_content">
+                    <h3 class="car_sub_title">Kia picanto <span class="subtitle_plus">ou Similaire</span></h3>
+                    <div class="car_caract">
+                      <div class="caract_item">
+                        <h5 class="item_label">Carburant</h5>
+                        <div class="item_value">Essence</div>
+                      </div>
+                      <div class="caract_item">
+                        <h5 class="item_label">Passagers</h5>
+                        <div class="item_value">5</div>
+                      </div>
+                      <div class="caract_item">
+                        <h5 class="item_label">Portes</h5>
+                        <div class="item_value">5</div>
+                      </div>
+                      <div class="caract_item">
+                        <h5 class="item_label">Valises</h5>
+                        <div class="item_value">1</div>
+                      </div>
+                      <div class="caract_item">
+                        <h5 class="item_label">Transmission</h5>
+                        <div class="item_value">Manuelle</div>
+                      </div>
+                      <div class="caract_item">
+                        <h5 class="item_label">Climatisation</h5>
+                        <div class="item_value"></div>
+                      </div>
+                    </div>
+                    <div class="price_container">
+                      <div class="price"><span>25€</span>/jour</div>
+                    </div>
+                    <div class="reservation_date_content">
+                      <div class="reservation_date">Du 2023-11-14 13:00 au 2023-11-29 13:00</div>
+                      <div class="edit_date">@ Changer les dates</div>
+                    </div>
+                    <button class="reservation_btn btn">Reserver Maintenant</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end single car -->
+            <!-- car single -->
+            <div class="single_car">
+              <div class="car_box">
+                <div class="car_title_container">
+                  <h2 class="car_title">Disponible</h2>
+                </div>
+                <div class="car_image_container">
+                  <img class="car" src="./images/parc-auto/thumb-Kia-Picanto.png" alt="" srcset="" />
+                </div>
+                <div class="car_info_container">
+                  <div class="car_info_content">
+                    <h3 class="car_sub_title">Kia picanto <span class="subtitle_plus">ou Similaire</span></h3>
+                    <div class="car_caract">
+                      <div class="caract_item">
+                        <h5 class="item_label">Carburant</h5>
+                        <div class="item_value">Essence</div>
+                      </div>
+                      <div class="caract_item">
+                        <h5 class="item_label">Passagers</h5>
+                        <div class="item_value">5</div>
+                      </div>
+                      <div class="caract_item">
+                        <h5 class="item_label">Portes</h5>
+                        <div class="item_value">5</div>
+                      </div>
+                      <div class="caract_item">
+                        <h5 class="item_label">Valises</h5>
+                        <div class="item_value">1</div>
+                      </div>
+                      <div class="caract_item">
+                        <h5 class="item_label">Transmission</h5>
+                        <div class="item_value">Manuelle</div>
+                      </div>
+                      <div class="caract_item">
+                        <h5 class="item_label">Climatisation</h5>
+                        <div class="item_value"></div>
+                      </div>
+                    </div>
+                    <div class="price_container">
+                      <div class="price"><span>25€</span>/jour</div>
+                    </div>
+                    <div class="reservation_date_content">
+                      <div class="reservation_date">Du 2023-11-14 13:00 au 2023-11-29 13:00</div>
+                      <div class="edit_date">@ Changer les dates</div>
+                    </div>
+                    <button class="reservation_btn btn">Reserver Maintenant</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end single car -->
+            <!-- car single -->
+            <div class="single_car">
+              <div class="car_box">
+                <div class="car_title_container">
+                  <h2 class="car_title">Disponible</h2>
+                </div>
+                <div class="car_image_container">
+                  <img class="car" src="./images/parc-auto/thumb-Kia-Picanto.png" alt="" srcset="" />
+                </div>
+                <div class="car_info_container">
+                  <div class="car_info_content">
+                    <h3 class="car_sub_title">Kia picanto <span class="subtitle_plus">ou Similaire</span></h3>
+                    <div class="car_caract">
+                      <div class="caract_item">
+                        <h5 class="item_label">Carburant</h5>
+                        <div class="item_value">Essence</div>
+                      </div>
+                      <div class="caract_item">
+                        <h5 class="item_label">Passagers</h5>
+                        <div class="item_value">5</div>
+                      </div>
+                      <div class="caract_item">
+                        <h5 class="item_label">Portes</h5>
+                        <div class="item_value">5</div>
+                      </div>
+                      <div class="caract_item">
+                        <h5 class="item_label">Valises</h5>
+                        <div class="item_value">1</div>
+                      </div>
+                      <div class="caract_item">
+                        <h5 class="item_label">Transmission</h5>
+                        <div class="item_value">Manuelle</div>
+                      </div>
+                      <div class="caract_item">
+                        <h5 class="item_label">Climatisation</h5>
+                        <div class="item_value"></div>
+                      </div>
+                    </div>
+                    <div class="price_container">
+                      <div class="price"><span>25€</span>/jour</div>
+                    </div>
+                    <div class="reservation_date_content">
+                      <div class="reservation_date">Du 2023-11-14 13:00 au 2023-11-29 13:00</div>
+                      <div class="edit_date">@ Changer les dates</div>
+                    </div>
+                    <button class="reservation_btn btn">Reserver Maintenant</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end single car -->
+            <!-- car single -->
+            <div class="single_car">
+              <div class="car_box">
+                <div class="car_title_container">
+                  <h2 class="car_title">Disponible</h2>
+                </div>
+                <div class="car_image_container">
+                  <img class="car" src="./images/parc-auto/thumb-Kia-Picanto.png" alt="" srcset="" />
+                </div>
+                <div class="car_info_container">
+                  <div class="car_info_content">
+                    <h3 class="car_sub_title">Kia picanto <span class="subtitle_plus">ou Similaire</span></h3>
+                    <div class="car_caract">
+                      <div class="caract_item">
+                        <h5 class="item_label">Carburant</h5>
+                        <div class="item_value">Essence</div>
+                      </div>
+                      <div class="caract_item">
+                        <h5 class="item_label">Passagers</h5>
+                        <div class="item_value">5</div>
+                      </div>
+                      <div class="caract_item">
+                        <h5 class="item_label">Portes</h5>
+                        <div class="item_value">5</div>
+                      </div>
+                      <div class="caract_item">
+                        <h5 class="item_label">Valises</h5>
+                        <div class="item_value">1</div>
+                      </div>
+                      <div class="caract_item">
+                        <h5 class="item_label">Transmission</h5>
+                        <div class="item_value">Manuelle</div>
+                      </div>
+                      <div class="caract_item">
+                        <h5 class="item_label">Climatisation</h5>
+                        <div class="item_value"></div>
+                      </div>
+                    </div>
+                    <div class="price_container">
+                      <div class="price"><span>25€</span>/jour</div>
+                    </div>
+                    <div class="reservation_date_content">
+                      <div class="reservation_date">Du 2023-11-14 13:00 au 2023-11-29 13:00</div>
+                      <div class="edit_date">@ Changer les dates</div>
+                    </div>
+                    <button class="reservation_btn btn">Reserver Maintenant</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end single car -->
+            <!-- car single -->
+            <div class="single_car">
+              <div class="car_box">
+                <div class="car_title_container">
+                  <h2 class="car_title">Disponible</h2>
+                </div>
+                <div class="car_image_container">
+                  <img class="car" src="./images/parc-auto/thumb-Kia-Picanto.png" alt="" srcset="" />
+                </div>
+                <div class="car_info_container">
+                  <div class="car_info_content">
+                    <h3 class="car_sub_title">Kia picanto <span class="subtitle_plus">ou Similaire</span></h3>
+                    <div class="car_caract">
+                      <div class="caract_item">
+                        <h5 class="item_label">Carburant</h5>
+                        <div class="item_value">Essence</div>
+                      </div>
+                      <div class="caract_item">
+                        <h5 class="item_label">Passagers</h5>
+                        <div class="item_value">5</div>
+                      </div>
+                      <div class="caract_item">
+                        <h5 class="item_label">Portes</h5>
+                        <div class="item_value">5</div>
+                      </div>
+                      <div class="caract_item">
+                        <h5 class="item_label">Valises</h5>
+                        <div class="item_value">1</div>
+                      </div>
+                      <div class="caract_item">
+                        <h5 class="item_label">Transmission</h5>
+                        <div class="item_value">Manuelle</div>
+                      </div>
+                      <div class="caract_item">
+                        <h5 class="item_label">Climatisation</h5>
+                        <div class="item_value"></div>
+                      </div>
+                    </div>
+                    <div class="price_container">
+                      <div class="price"><span>25€</span>/jour</div>
+                    </div>
+                    <div class="reservation_date_content">
+                      <div class="reservation_date">Du 2023-11-14 13:00 au 2023-11-29 13:00</div>
+                      <div class="edit_date">@ Changer les dates</div>
+                    </div>
+                    <button class="reservation_btn btn">Reserver Maintenant</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end single car -->
+            <!-- car single -->
+            <div class="single_car">
+              <div class="car_box">
+                <div class="car_title_container">
+                  <h2 class="car_title">Disponible</h2>
+                </div>
+                <div class="car_image_container">
+                  <img class="car" src="./images/parc-auto/thumb-Kia-Picanto.png" alt="" srcset="" />
+                </div>
+                <div class="car_info_container">
+                  <div class="car_info_content">
+                    <h3 class="car_sub_title">Kia picanto <span class="subtitle_plus">ou Similaire</span></h3>
+                    <div class="car_caract">
+                      <div class="caract_item">
+                        <h5 class="item_label">Carburant</h5>
+                        <div class="item_value">Essence</div>
+                      </div>
+                      <div class="caract_item">
+                        <h5 class="item_label">Passagers</h5>
+                        <div class="item_value">5</div>
+                      </div>
+                      <div class="caract_item">
+                        <h5 class="item_label">Portes</h5>
+                        <div class="item_value">5</div>
+                      </div>
+                      <div class="caract_item">
+                        <h5 class="item_label">Valises</h5>
+                        <div class="item_value">1</div>
+                      </div>
+                      <div class="caract_item">
+                        <h5 class="item_label">Transmission</h5>
+                        <div class="item_value">Manuelle</div>
+                      </div>
+                      <div class="caract_item">
+                        <h5 class="item_label">Climatisation</h5>
+                        <div class="item_value"></div>
+                      </div>
+                    </div>
+                    <div class="price_container">
+                      <div class="price"><span>25€</span>/jour</div>
+                    </div>
+                    <div class="reservation_date_content">
+                      <div class="reservation_date">Du 2023-11-14 13:00 au 2023-11-29 13:00</div>
+                      <div class="edit_date">@ Changer les dates</div>
+                    </div>
+                    <button class="reservation_btn btn">Reserver Maintenant</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end single car -->
+          </div>
+          <div class="pagination">
+            <div class="pagination_content">
+              <div class="pages_indice">
+                <div class="item active">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+              </div>
+              <div class="item">suivant</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end story section -->
+    </main>
+  </body>
+</html>
