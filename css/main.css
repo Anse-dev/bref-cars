@@ -1191,17 +1191,6 @@ p {
   font-size: 20px;
 }
 
-.btn {
-  width: 100px;
-  height: 50px;
-  margin-top: 10px;
-  color: white;
-  background-color: black;
-  cursor: pointer;
-  border-radius: 0.4rem;
-  border: 1px solid;
-}
-
 @media (max-width: 885px) {
   .nous-contacter {
     display: flex;
