@@ -214,10 +214,89 @@
        }
    }
 
+   /*____________temoignages style__________ */
+   .temoignage_section {
+       .temoignage_section_title {
+           margin-bottom: 10px;
+       }
+
+       .container2 {
+           padding: 0 60px;
+       }
+
+       @media (min-width: 1025px) and (max-width: 1200px) {
+           .temoignage_box {
+               padding: 30px !important;
+           }
+       }
+
+       .temoignage_content {
+           .temoignages_elements {
+               .items_container {
+                   display: grid;
+                   grid-template-columns: repeat(3, auto);
+                   gap: 50px;
+
+                   .temoignage {
+                       border-radius: 1rem;
+                       background-color: #444444;
+                       color: white;
+                       // height: min-content;
+                       text-align: center;
+
+
+
+                       .temoignage_box {
+                           padding: 50px;
+                           background: url(../images/parc-auto/map-pattern.png) center no-repeat;
+                           background-size: cover;
+
+
+                           .temoignage_box_content {
+                               display: flex;
+                               flex-direction: column;
+                               gap: 10px;
+                               padding: 5px;
+                               border-radius: 1rem;
+                               background-color: #e4e4e434;
+
+                               .note_container {
+                                   display: flex;
+                                   gap: 2px;
+                                   margin: 0 auto;
+
+                                   i {
+                                       color: orange;
+                                   }
+                               }
+
+                               .description {}
+
+                               .author_name {
+                                   color: orange;
+                                   text-transform: uppercase;
+                               }
+
+                               .author_contry {}
+                           }
+
+
+
+                       }
+                   }
+               }
+           }
+       }
+   }
+
    /* responsive disign */
    @media (max-width: 450px) {
        .btn {
            padding: 10px;
+       }
+
+       .temoignage_section_title {
+           text-align: center;
        }
 
        input,
@@ -244,10 +323,19 @@
            gap: 10px;
            align-items: center;
        }
+
+       /*_____ temoignage_______ */
+       .container2 {
+           padding: 0 15px !important;
+       }
    }
 
 
    @media (max-width: 650px) {
+       .temoignage_section_title {
+           font-size: 21px;
+       }
+
        .container2 {
            padding: 5%;
        }
@@ -369,6 +457,27 @@
                padding: 2px 10px;
            }
        }
+
+       /* ----------temoignage------- */
+       .temoignage_section {
+           .temoignage_content {
+               .temoignages_elements {
+                   .items_container {
+                       display: grid;
+                       grid-template-columns: repeat(1, auto) !important;
+                       gap: 20px !important;
+
+                       .temoignage_box {
+                           padding: 20px !important;
+
+                           .description {
+                               font-size: 15px;
+                           }
+                       }
+                   }
+               }
+           }
+       }
    }
 
    @media (max-width: 1024px) {
@@ -387,5 +496,26 @@
            display: grid;
            grid-template-columns: repeat(2, auto);
            gap: 30px;
+       }
+
+       /* ----------temoignage------- */
+       .temoignage_section {
+           .temoignage_content {
+               .temoignages_elements {
+                   .items_container {
+                       display: grid;
+                       grid-template-columns: repeat(2, auto);
+                       gap: 50px;
+
+                       .temoignage_box {
+                           padding: 20px !important;
+
+                           .description {
+                               font-size: 15px;
+                           }
+                       }
+                   }
+               }
+           }
        }
    }

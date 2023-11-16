@@ -34,10 +34,6 @@ h5 {
   background-color: #E4E4E4;
 }
 
-.container2 {
-  padding: 6% 10%;
-}
-
 .form_content {
   display: flex;
   flex-direction: column;
@@ -50,22 +46,18 @@ h5 {
   gap: 10px;
   margin-bottom: 20px;
 }
-
 .champ label {
   color: #696868;
   font-weight: 500;
   font-size: 14px;
 }
-
 .champ select,
 .champ #conducteur-age {
   padding: 11px;
 }
-
 .champ input {
   padding: 7px;
 }
-
 .champ input,
 .champ select {
   border: 1.5px solid #BCBCBC;
@@ -75,7 +67,6 @@ h5 {
   font-weight: 500;
   background-color: rgba(250, 250, 250, 0.7960784314);
 }
-
 .champ .date_items {
   display: flex;
   flex-direction: row;
@@ -127,11 +118,9 @@ h5 {
   flex-direction: row;
   justify-content: space-between;
 }
-
 .car_story_title .title span {
   color: orange;
 }
-
 .car_story_title span {
   font-weight: bolder;
 }
@@ -141,36 +130,30 @@ h5 {
   grid-template-columns: repeat(3, auto);
   gap: 30px;
 }
-
 .car-story-content .single_car {
   text-align: center;
   background-color: #E4E4E4;
   padding: 10px 2%;
   border: 0.1px solid rgba(211, 211, 211, 0.4941176471);
 }
-
 .car-story-content .single_car .car_info_content {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-
 .car-story-content .single_car .car_info_content .reservation_btn {
   width: 85%;
   margin: 0 auto;
 }
-
 .car-story-content .single_car .car_info_content .price span {
   color: orange;
   font-weight: bolder;
   font-size: 30px;
 }
-
 .car-story-content .single_car .car_caract {
   display: grid;
   grid-template-columns: repeat(3, auto);
 }
-
 .car-story-content .single_car .car_caract .caract_item {
   border: 0.1px solid rgba(130, 130, 130, 0.1647058824);
   padding: 5px 0;
@@ -184,114 +167,167 @@ h5 {
   justify-content: center;
   gap: 50px;
 }
-
 .pagination_content .pages_indice {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 20px;
 }
-
 .pagination_content .item {
   padding: 8px 20px;
   border: 1px solid;
 }
-
 .pagination_content .item:hover {
   background-color: #000000;
   color: #E4E4E4;
   transition: 0.5s;
 }
-
 .pagination_content .item.active {
   background-color: #000000;
   color: #E4E4E4;
   transition: 0.5s;
 }
 
+/*____________temoignages style__________ */
+.temoignage_section .temoignage_section_title {
+  margin-bottom: 10px;
+}
+.temoignage_section .container2 {
+  padding: 0 60px;
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .temoignage_section .temoignage_box {
+    padding: 30px !important;
+  }
+}
+.temoignage_section .temoignage_content .temoignages_elements .items_container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 50px;
+}
+.temoignage_section .temoignage_content .temoignages_elements .items_container .temoignage {
+  border-radius: 1rem;
+  background-color: #444444;
+  color: white;
+  text-align: center;
+}
+.temoignage_section .temoignage_content .temoignages_elements .items_container .temoignage .temoignage_box {
+  padding: 50px;
+  background: url(../images/parc-auto/map-pattern.png) center no-repeat;
+  background-size: cover;
+}
+.temoignage_section .temoignage_content .temoignages_elements .items_container .temoignage .temoignage_box .temoignage_box_content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px;
+  border-radius: 1rem;
+  background-color: rgba(228, 228, 228, 0.2039215686);
+}
+.temoignage_section .temoignage_content .temoignages_elements .items_container .temoignage .temoignage_box .temoignage_box_content .note_container {
+  display: flex;
+  gap: 2px;
+  margin: 0 auto;
+}
+.temoignage_section .temoignage_content .temoignages_elements .items_container .temoignage .temoignage_box .temoignage_box_content .note_container i {
+  color: orange;
+}
+.temoignage_section .temoignage_content .temoignages_elements .items_container .temoignage .temoignage_box .temoignage_box_content .author_name {
+  color: orange;
+  text-transform: uppercase;
+}
 /* responsive disign */
 @media (max-width: 450px) {
   .btn {
     padding: 10px;
   }
-
+  .temoignage_section_title {
+    text-align: center;
+  }
   input,
   select,
   #conducteur-age {
     width: 100%;
     font-size: 13px;
-    padding: 6px;
+    padding: 5px;
     border-radius: 0;
   }
-
   .date_items {
     gap: 10px;
   }
+  .form_content {
+    gap: 0px;
+  }
+  .conducteur_info {
+    width: 50% !important;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 10px;
+    align-items: center;
+  }
+  /*_____ temoignage_______ */
+  .container2 {
+    padding: 0 15px !important;
+  }
 }
-
-@media (max-width: 640px) {
+@media (max-width: 650px) {
+  .temoignage_section_title {
+    font-size: 21px;
+  }
+  .container2 {
+    padding: 5%;
+  }
   .conducteur_info {
     width: 70%;
     display: grid;
     grid-template-columns: repeat(1, auto);
     gap: 10px;
   }
-
   .btn {
     width: 100% !important;
     font-size: 10px;
     letter-spacing: 0.5px;
   }
-
   /* form section */
   .form_section {
     background-color: white;
   }
-
   .champ {
     display: flex;
     flex-direction: column;
     gap: 5px;
     margin-bottom: 10px;
   }
-
   .champ .date_items {
     gap: 10%;
   }
-
   .form_content {
     gap: 10px;
   }
-
   .form_content input,
   .form_content select,
   .form_content #conducteur-age {
     width: 100%;
   }
-
   .form_content .voiture_info {
     display: flex;
     flex-direction: column;
     gap: 0;
   }
-
   .form_content .voiture_info .reservation_localisation {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
-
   .form_content .voiture_info .reservation_localisation .depart_container,
   .form_content .voiture_info .reservation_localisation .arriver_container {
     display: flex;
     flex-direction: column;
   }
-
   /* start story section */
   .car-story {
     background-color: white;
   }
-
   /* tilte */
   .car_story_title {
     display: flex;
@@ -299,75 +335,76 @@ h5 {
     gap: 0px;
     text-align: center;
   }
-
   .car_story_title h1 {
     font-size: 20px;
   }
-
   .car_story_title .title span {
     color: orange;
   }
-
   .car_story_title span {
     font-weight: bolder;
   }
-
   .car-story-content {
     display: grid;
     grid-template-columns: repeat(1, auto) !important;
     gap: 30px;
   }
-
   .car-story-content .single_car {
     width: 100%;
     padding: 10px;
   }
-
   .car-story-content .single_car .car_info_content {
     gap: 5px;
   }
-
   .car-story-content .single_car .car_caract {
     display: grid;
     grid-template-columns: repeat(2, auto);
   }
-
   .pagination_content {
     gap: 15px;
   }
-
   .pagination_content .pages_indice {
     gap: 10px;
   }
-
   .pagination_content .item {
     padding: 2px 10px;
   }
+  /* ----------temoignage------- */
+  .temoignage_section .temoignage_content .temoignages_elements .items_container {
+    display: grid;
+    grid-template-columns: repeat(1, auto) !important;
+    gap: 20px !important;
+  }
+  .temoignage_section .temoignage_content .temoignages_elements .items_container .temoignage_box {
+    padding: 20px !important;
+  }
+  .temoignage_section .temoignage_content .temoignages_elements .items_container .temoignage_box .description {
+    font-size: 15px;
+  }
 }
-
 @media (max-width: 1024px) {
-
   /* form */
   .voiture_info {
     display: flex;
     flex-direction: column;
     gap: 0;
   }
-
-  .conducteur_info {
-    width: 40%;
-    display: grid;
-    grid-template-columns: repeat(1, auto);
-    gap: 10px;
-    align-items: center;
-  }
-
   /* stoey */
   .car-story-content {
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 30px;
   }
-}
-
-/*# sourceMappingURL=parc-auto.css.map */
+  /* ----------temoignage------- */
+  .temoignage_section .temoignage_content .temoignages_elements .items_container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 50px;
+  }
+  .temoignage_section .temoignage_content .temoignages_elements .items_container .temoignage_box {
+    padding: 20px !important;
+  }
+  .temoignage_section .temoignage_content .temoignages_elements .items_container .temoignage_box .description {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=parc-auto.css.map */
