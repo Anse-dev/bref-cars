@@ -1,0 +1,12 @@
+Outer Space
+
+#2c3436
+Mercury
+
+#e4e4e4
+Copper Rust
+
+#8f494d
+Carrot Orange
+
+#eda018
